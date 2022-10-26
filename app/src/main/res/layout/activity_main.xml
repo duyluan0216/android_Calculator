@@ -54,6 +54,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="2dp"
+            android:onClick="onOperator"
             android:layout_weight="1"
             android:text="@string/divide" />
     </LinearLayout>
@@ -94,6 +95,7 @@
 
         <Button
             android:id="@+id/btnMultiply"
+            android:onClick="onOperator"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="2dp"
@@ -138,6 +140,7 @@
 
         <Button
             android:id="@+id/btnSubtract"
+            android:onClick="onOperator"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="2dp"
@@ -152,13 +155,21 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
+        <Button
+            android:id="@+id/btnDot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:onClick="onDecimalPoint"
+            android:text="@string/dot" />
 
         <Button
             android:id="@+id/btnZero"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="2dp"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:onClick="onDigit"
             android:text="@string/_0" />
 
@@ -174,6 +185,7 @@
         <Button
             android:id="@+id/btnPlus"
             android:layout_width="0dp"
+            android:onClick="onOperator"
             android:layout_height="match_parent"
             android:layout_margin="2dp"
             android:layout_weight="1"
@@ -193,6 +205,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="2dp"
+            android:onClick="onEqual"
             android:layout_weight="2"
             android:text="@string/equal" />
 
